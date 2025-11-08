@@ -119,8 +119,10 @@ Iniciar el proyecto con el comando:
 
 **Crear un nuevo cliente**
 - **POST** /api/clientes
+
 *Headers*
 - Accept: application/json
+
 *Body - raw - JSON*
 
 {
@@ -136,6 +138,7 @@ Iniciar el proyecto con el comando:
 
 **Iniciar Sesión**
 - **POST** /api/login
+
 *Body - raw - JSON*
 
 {
@@ -147,9 +150,11 @@ Devuelve el token de autorización
 
 **Listar todos los clientes**
 - **GET** /api/clientes
+
 *Authorization*
 - Type: Bearer Token
 - Token: "Pegar el token generado en el login"
+
 *Headers*
 - Accept: application/json
 
@@ -158,11 +163,14 @@ Para mostrar un cliente específico usar:
 
 **Actualizar un cliente**
 - **PUT** /api/clientes/{id}
+
 *Authorization*
 - Type: Bearer Token
 - Token: Pegar el token generado en el login
+
 *Headers*
 - Accept: application/json
+
 *Body - raw - JSON*
 
 {
@@ -173,13 +181,16 @@ Para mostrar un cliente específico usar:
 
 **Eliminar un cliente**
 - **DELETE** /api/clientes/{id}
+
 *Authorization*
 - Type: Bearer Token
 - Token: Pegar el token generado en el login
+
 *Headers*
 - Accept: application/json
 
 **Reemplazar {id} por el número correspondiente**
+
 Por ejemplo: /api/clientes/1
 
 ---
